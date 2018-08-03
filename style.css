@@ -3,12 +3,12 @@ body {
 }
 
 #profile_pic {
-  height: 70%;
   border: 2px solid red;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #about_me {
-  height: 70%;
   border: 2px solid blue;
 }
 
@@ -24,11 +24,14 @@ body {
   text-align: center;
 }
 
-li {
+img {
+  width: 180px;
+}
+
+li a {
   border: 2px solid white;
   border-radius: 12px;
   margin-left: 10px;
-  margin-right: 10px;
   background-color: blue;
 }
 
@@ -36,9 +39,4 @@ li {
   background-color: black;
   margin-bottom: 0px;
   height: 60px;
-}
-
-.row {
-  margin-left: 30px;
-  margin-right: 30px;
 }
