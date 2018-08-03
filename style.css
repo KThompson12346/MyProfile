@@ -1,10 +1,14 @@
+body {
+  text-align: center;
+}
+
 #profile_pic {
-  height: 350px;
+  height: 70%;
   border: 2px solid red;
 }
 
 #about_me {
-  height: 350px;
+  height: 70%;
   border: 2px solid blue;
 }
 
@@ -17,7 +21,6 @@
 
 #row_contact {
   border: 2px solid green;
-  margin-bottom: 30px;
   text-align: center;
 
 }
@@ -28,7 +31,6 @@ li {
   margin-left: 10px;
   margin-right: 10px;
   background-color: blue;
-  
 }
 
 .navbar {
