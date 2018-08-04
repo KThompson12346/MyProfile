@@ -3,52 +3,66 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Kirome Thompson</title>
   </head>
-  <body>
-    <nav class="navbar navbar_status_top">
-      <div class="container">
-        <div class="navbar-header navbar-right">
-         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-  			    <ul class="nav navbar-nav">
-  				    <li><a href="#">About me</a></li>
-              <li><a href="#">Portfolio</a></li>
-  				    <li><a href="#">Technical</a></li>
-              <li><a href="#">Contact</a></li>
-    			  </ul>
-    		  </div>
-        </div>
+<body>
+  <div class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">Kirome</a>
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse" type="button" name="button">
+        <span class="icon-bar"><a href="#"></a></span>
+        <span class="icon-bar"><a href="#"></a></span>
+        <span class="icon-bar"><a href="#"></a></span>
+      </button>
+      <div class="collapse navbar-collapse navHeaderCollapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Technical</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </div>
       <div class="main-container">
-      <div class="row">
+      <div class="row text-center">
         <div class="col-sm-2" id="profile_pic">
-          <div class="Profile_Picture">
-            <img src="SG_Logo.jpg" alt="My profile picture">
-          </div>
-      </div>
+            <img class="img-responsive img-circle" src="SG_Logo.jpg" alt="My profile picture">
+        </div>
         <div class="col-sm-10" id="about_me">
           <div class="About_me">
-            <div class="row">
-              <div class="col-sm-12">
                 <h1>Kirome Thompson</h1>
                 <h2>Sparta Global Trainee Consultant</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
       <div class="row" >
         <div class="col-xs-12" id="row_portfolio">
           Portfolio
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12  " id="row_contact">
-          Contact Info
+      <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container-fluid">
+         <a href="#" class="navbar-brand">Contact</a>
+          <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse1" type="button" name="button">
+            <span class="icon-bar"><a href="#"></a></span>
+            <span class="icon-bar"><a href="#"></a></span>
+            <span class="icon-bar"><a href="#"></a></span>
+          </button>
+          <div class="collapse navbar-collapse navHeaderCollapse1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">About me</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Technical</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

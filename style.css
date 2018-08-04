@@ -1,15 +1,32 @@
+/* body, html {
+
+} */
+
 body {
   text-align: center;
+  height: 100%;
+  background-color: none;
+  background-image: url("profile_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
 }
 
 #profile_pic {
   border: 2px solid red;
   padding-left: 0px;
   padding-right: 0px;
+  border: 5px solid yellow;
 }
 
 #about_me {
   border: 2px solid blue;
+  color: red;
 }
 
 #row_portfolio {
@@ -24,19 +41,17 @@ body {
   text-align: center;
 }
 
-img {
-  width: 180px;
-}
-
-li a {
-  border: 2px solid white;
-  border-radius: 12px;
-  margin-left: 10px;
-  background-color: blue;
-}
-
 .navbar {
   background-color: black;
   margin-bottom: 0px;
   height: 60px;
 }
+
+@media screen and (min-width: 768px) {
+  .navbar-brand {
+    margin-left: 0 !important;
+    }
+  }
+  /* #profile_pic {
+    margin-left: 200px;
+} */
