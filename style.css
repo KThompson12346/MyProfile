@@ -2,10 +2,17 @@ body {
   text-align: center;
   height: 100%;
   background-color: none;
-  background-image: url("profile_background.jpg");
-  background-size: cover;
+  background-image: url("background.jpg");
+  background-size:cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   z-index: -1;
+}
+
+ul {
+  background-color: red;
+  border-radius: 12px;
 }
 
 i {
@@ -60,6 +67,7 @@ h1 {
 .columns {
   padding-bottom: 50px;
   font-family: "Domine"; font-size: 18px;
+  text-align: center;
 }
 .a_column {
   width: 30%;
@@ -73,7 +81,9 @@ h1 {
 }
 
 
-/*Clearfix styling*/
+/* Clearfix styling
+Used to get rid of any elements that are floating before and after
+*/
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
@@ -108,6 +118,7 @@ h1 {
     margin: 0;
   }
   .third_column {
+    align-items: center;
     clear: both;
     float: none;
     width: auto;
@@ -121,7 +132,6 @@ h1 {
     }
   }
   @media screen and (max-width: 576px) {
-
     .mobile-collapse {
       width: auto;
       float: none;
