@@ -8,9 +8,29 @@ body {
   z-index: -1;
 }
 
+ .title {
+    text-align: center;
+ }
+
+.row {
+  align-items: center;
+  overflow: auto;
+  display: inline-block;
+}
+
+.text-center {
+  align-items: center;
+  overflow: auto;
+  display: inline-block;
+}
+
 .img-responsive {
   width: 100%;
   height: auto;
+}
+
+#profile_pic, #about_me {
+  display: inline-block;
 }
 
 #profile_pic {
@@ -23,13 +43,51 @@ body {
 #about_me {
   border: 2px solid blue;
   color: red;
+  text-align: justify;
+}
+
+.thirds {
+  padding-bottom: 50px;
+}
+.one-third {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+  text-align: justify;
+}
+/* .one-third-second {
+    margin: 0;
+} */
+.one-third-last {
+  margin: 0;
+  /* clear: both;
+  float: none;
+  width: auto;
+  padding: 20px 0 0 0; */
+}
+
+
+/*Clearfix styling*/
+.clearfix::before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
 }
 
 #row_portfolio {
-  border: 2px solid yellow;
+  background-color:  #FFF;
+  padding: 0 25px 0 25px;
+  /* border: 2px solid yellow;
   margin-top: 30px;
   margin-bottom: 30px;
   height: 350px;
+  overflow: auto;
+  overflow: scroll; */
 }
 
 #row_contact {
@@ -48,10 +106,5 @@ body {
     height: auto;
     width: auto;
     margin: 0 auto;
-    }
   }
-/* @media screen and (min-width: 768px) {
-  .navbar-brand {
-    margin-left: 0 !important;
-    }
-  } */
+}
