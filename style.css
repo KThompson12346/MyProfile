@@ -8,6 +8,10 @@ body {
   z-index: -1;
 }
 
+i {
+  font-size: 30px;
+}
+
 h1 {
   font-family: "Domine"; font-size: 50px;
 }
@@ -53,18 +57,18 @@ h1 {
   padding: 0 30px 0 30px;
 }
 
-.thirds {
+.columns {
   padding-bottom: 50px;
   font-family: "Domine"; font-size: 18px;
 }
-.one-third {
+.a_column {
   width: 30%;
   float: left;
   margin-right: 5%;
   text-align: justify;
   padding-top: 30px;
 }
-.one-third-last {
+.third_column {
   margin: 0;
 }
 
@@ -82,7 +86,6 @@ h1 {
 }
 
 #row_portfolio {
-  background-color:  #FFF;
   padding: 0 25px 0 25px;
 }
 
@@ -98,6 +101,18 @@ h1 {
 }
 
 @media screen and (max-width: 900px) {
+  .a_column {
+    width: 47.5%;
+  }
+  .second_column {
+    margin: 0;
+  }
+  .third_column {
+    clear: both;
+    float: none;
+    width: auto;
+    padding: 20px 0 0 0;
+  }
   @media screen and (max-width: 768px) {
     .img-responsive {
       height: auto;
@@ -106,28 +121,11 @@ h1 {
     }
   }
   @media screen and (max-width: 576px) {
+
     .mobile-collapse {
       width: auto;
       float: none;
       margin-right: 0;
     }
-    .one-third {
-      width: auto;
-    }
-    .trial {
-      width: auto;
-    }
-  }
-  .one-third {
-    width: 47.5%;
-  }
-  .one-third-second {
-    margin: 0;
-  }
-  .one-third-last {
-    clear: both;
-    float: none;
-    padding: 20px 0 0 0;
-    width: auto;
   }
 }
