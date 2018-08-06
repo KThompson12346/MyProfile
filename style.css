@@ -8,8 +8,8 @@ body {
   z-index: -1;
 }
 
-i {
-  font-size: 30px;
+h1 {
+  font-family: "Domine"; font-size: 50px;
 }
 
  .title {
@@ -28,9 +28,10 @@ i {
   display: inline-block;
 }
 
-.img-responsive {
+.img-responsive, img {
   max-width: 100%;
   height: auto;
+  margin: 0 0 20px 0;
 }
 
 #profile_pic, #about_me {
@@ -61,6 +62,7 @@ i {
   float: left;
   margin-right: 5%;
   text-align: justify;
+  padding-top: 30px;
 }
 .one-third-last {
   margin: 0;
@@ -68,7 +70,7 @@ i {
 
 
 /*Clearfix styling*/
-.clearfix::before, .clearfix:after {
+.clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
@@ -111,7 +113,9 @@ i {
     }
     .one-third {
       width: auto;
-
+    }
+    .trial {
+      width: auto;
     }
   }
   .one-third {
