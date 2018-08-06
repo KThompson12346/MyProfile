@@ -8,6 +8,10 @@ body {
   z-index: -1;
 }
 
+i {
+  font-size: 30px;
+}
+
  .title {
     text-align: center;
  }
@@ -25,7 +29,7 @@ body {
 }
 
 .img-responsive {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -44,10 +48,13 @@ body {
   border: 2px solid blue;
   color: red;
   text-align: justify;
+  font-family: "Domine"; font-size: 18px;
+  padding: 0 30px 0 30px;
 }
 
 .thirds {
   padding-bottom: 50px;
+  font-family: "Domine"; font-size: 18px;
 }
 .one-third {
   width: 30%;
@@ -55,15 +62,8 @@ body {
   margin-right: 5%;
   text-align: justify;
 }
-/* .one-third-second {
-    margin: 0;
-} */
 .one-third-last {
   margin: 0;
-  /* clear: both;
-  float: none;
-  width: auto;
-  padding: 20px 0 0 0; */
 }
 
 
@@ -82,12 +82,6 @@ body {
 #row_portfolio {
   background-color:  #FFF;
   padding: 0 25px 0 25px;
-  /* border: 2px solid yellow;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  height: 350px;
-  overflow: auto;
-  overflow: scroll; */
 }
 
 #row_contact {
@@ -101,10 +95,35 @@ body {
   height: 60px;
 }
 
-@media screen and (max-width: 768px) {
-  .img-responsive {
-    height: auto;
+@media screen and (max-width: 900px) {
+  @media screen and (max-width: 768px) {
+    .img-responsive {
+      height: auto;
+      width: auto;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .mobile-collapse {
+      width: auto;
+      float: none;
+      margin-right: 0;
+    }
+    .one-third {
+      width: auto;
+
+    }
+  }
+  .one-third {
+    width: 47.5%;
+  }
+  .one-third-second {
+    margin: 0;
+  }
+  .one-third-last {
+    clear: both;
+    float: none;
+    padding: 20px 0 0 0;
     width: auto;
-    margin: 0 auto;
   }
 }
